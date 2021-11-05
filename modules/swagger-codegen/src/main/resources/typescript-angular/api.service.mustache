@@ -355,7 +355,7 @@ import { Configuration }                                     from '../configurat
                 });
                 // https://github.com/swagger-api/swagger-codegen/issues/4037
                 if (extraHttpRequestParams) {
-                requestOptions = (<any>Object).assign(requestOptions, extraHttpRequestParams);
+                	requestOptions = (<any>Object).assign(requestOptions, extraHttpRequestParams);
                 }
 
                 return this.http.request(`${this.basePath}{{{path}}}`, requestOptions);
